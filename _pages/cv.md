@@ -29,7 +29,6 @@ author_profile: true
 
 ### Technical Skills
 *   **Languages**: Python, PyTorch, C++, JavaScript, TypeScript, GraphQL, Verilog.
-*   **Tools**: Vivado, FPGA, AgentCPM-GUI, VERL.
 
 ### Languages
 *   **Chinese**: Native
