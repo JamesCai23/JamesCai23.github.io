@@ -1,0 +1,13 @@
+# Jekyll
+.jekyll-cache/
+.jekyll-metadata
+_site/
+
+# OS
+.DS_Store
+
+# Temporary files
+resume.txt
+todo.md
+Resume_YimoCai_latex.txt
+Resume_YimoCai.pdf

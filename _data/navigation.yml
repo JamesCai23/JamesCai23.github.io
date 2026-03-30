@@ -1,0 +1,12 @@
+# Main navigation links
+main:
+  - title: "About"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "CV"
+    url: /cv/

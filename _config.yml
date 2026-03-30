@@ -1,0 +1,54 @@
+# Site settings
+title: "Yimo Cai"
+name: "Yimo Cai"
+description: "Yimo Cai's Personal Website - Undergraduate at Tsinghua University"
+url: "https://JamesCai23.github.io" # change to your github pages url
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Author settings
+author:
+  name: "Yimo Cai"
+  avatar: "/assets/images/profile.jpg"
+  bio: "3rd-year Undergraduate in Electronic Engineering at Tsinghua University. Researching 3D Vision and Multimodal Models."
+  location: "Beijing, China"
+  email: "caiym23@mails.tsinghua.edu.cn"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/JamesCai23"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:caiym23@mails.tsinghua.edu.cn"
+
+# Theme settings
+theme: jekyll-theme-academicpages # or remote_theme: academicpages/academicpages.github.io
+# If you don't want to use the theme as a gem, you can copy its files into your site.
+# For now, we'll assume standard layout names.
+
+# Navigation
+include: ["_pages"]
+exclude: ["node_modules", "vendor", "Gemfile", "Gemfile.lock"]
+
+# Collection settings
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+  teaching:
+    output: true
+    permalink: /teaching/:path/
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-include-cache
