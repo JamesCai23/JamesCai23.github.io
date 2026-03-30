@@ -1,56 +1,91 @@
-# Site settings
-title: "Yimo Cai"
-name: "Yimo Cai"
-description: "Yimo Cai's Personal Website - Undergraduate at Tsinghua University"
-url: "https://JamesCai23.github.io" # change to your github pages url
-baseurl: "" # the subpath of your site, e.g. /blog
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Yimo Cai"
+title_separator          : "-"
+name                     : "Yimo Cai"
+description              : "Yimo Cai's Personal Website - Undergraduate at Tsinghua University"
+url                      : "https://JamesCai23.github.io"
+baseurl                  : ""
+repository               : "JamesCai23/JamesCai23.github.io"
 
-# Author settings
+# Site Author
 author:
-  name: "Yimo Cai"
-  avatar: "/assets/images/profile.jpg"
-  bio: "3rd-year Undergraduate in Electronic Engineering at Tsinghua University. Researching 3D Vision and Multimodal Models."
-  location: "Beijing, China"
-  email: "caiym23@mails.tsinghua.edu.cn"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/JamesCai23"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:caiym23@mails.tsinghua.edu.cn"
+  avatar           : "profile.jpg"
+  name             : "Yimo Cai"
+  bio              : "3rd-year Undergraduate in Electronic Engineering at Tsinghua University. Researching 3D Vision and Multimodal Models."
+  location         : "Beijing, China"
+  email            : "caiym23@mails.tsinghua.edu.cn"
+  github           : "JamesCai23"
+  # links can be added here as per template structure if needed, 
+  # but the template usually uses specific keys like 'github', 'email', etc.
 
-# Theme settings
-remote_theme: academicpages/academicpages.github.io
-# theme: jekyll-theme-academicpages
-# If you don't want to use the theme as a gem, you can copy its files into your site.
-# For now, we'll assume standard layout names.
+# Publication Category
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'    
+  conferences:
+    title: 'Conference Papers'
 
-# Navigation
-include: ["_pages"]
-exclude: ["node_modules", "vendor", "Gemfile", "Gemfile.lock"]
+# Site Settings
+teaser                   : 
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
 
-# Collection settings
+# Collections
 collections:
+  teaching:
+    output: true
+    permalink: /teaching/:path/
   publications:
     output: true
     permalink: /publications/:path/
   portfolio:
     output: true
     permalink: /portfolio/:path/
-  teaching:
-    output: true
-    permalink: /teaching/:path/
 
-# Markdown settings
-markdown: kramdown
-highlighter: rouge
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-include-cache
-  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
