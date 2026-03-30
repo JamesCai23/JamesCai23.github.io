@@ -21,7 +21,8 @@ author:
       url: "mailto:caiym23@mails.tsinghua.edu.cn"
 
 # Theme settings
-theme: jekyll-theme-academicpages # or remote_theme: academicpages/academicpages.github.io
+remote_theme: academicpages/academicpages.github.io
+# theme: jekyll-theme-academicpages
 # If you don't want to use the theme as a gem, you can copy its files into your site.
 # For now, we'll assume standard layout names.
 
@@ -52,3 +53,4 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-include-cache
+  - jekyll-remote-theme
