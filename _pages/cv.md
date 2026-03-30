@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-[Download my CV as PDF](/assets/files/Resume_YimoCai.pdf)
+[Download my CV as PDF](/files/Resume_YimoCai.pdf)
 
 ### Education
 *   **Tsinghua University**, Sept 2023 – Now
