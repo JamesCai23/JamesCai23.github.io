@@ -1,26 +1,35 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# server process.
+
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Yimo Cai"
 title_separator          : "-"
 name                     : "Yimo Cai"
 description              : "Yimo Cai's Personal Website - Undergraduate at Tsinghua University"
 url                      : "https://JamesCai23.github.io"
-baseurl                  : ""
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "JamesCai23/JamesCai23.github.io"
 
 # Site Author
 author:
+  # Biographic information
   avatar           : "profile.jpg"
   name             : "Yimo Cai"
   bio              : "3rd-year Undergraduate in Electronic Engineering at Tsinghua University. Researching 3D Vision and Multimodal Models."
   location         : "Beijing, China"
-  email            : "caiym23@mails.tsinghua.edu.cn"
-  github           : "JamesCai23"
-  # links can be added here as per template structure if needed, 
-  # but the template usually uses specific keys like 'github', 'email', etc.
+  email            : "caiym23@mails.tsinghua.edu.cn" 
 
-# Publication Category
+  # Repositories and software development
+  github           : "JamesCai23"
+
+# Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
     title: 'Books'
@@ -30,24 +39,84 @@ publication_category:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   : 
-breadcrumbs              : false
+teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled"
-talkmap_link             : false
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link             : false      #change to true to add link to talkmap on talks page
+
+# Analytics
+analytics:
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 # Collections
 collections:
   teaching:
     output: true
-    permalink: /teaching/:path/
+    permalink: /:collection/:path/
   publications:
     output: true
-    permalink: /publications/:path/
+    permalink: /:collection/:path/
   portfolio:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
